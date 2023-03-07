@@ -16,7 +16,6 @@ import static org.mockito.Mockito.verify;
 @RunWith(MockitoJUnitRunner.class)
 public class TicketServiceImplTest {
 
-
     private TicketPaymentService ticketPaymentService;
     private SeatReservationService seatReservationService;
 
@@ -28,7 +27,6 @@ public class TicketServiceImplTest {
         seatReservationService = Mockito.mock(SeatReservationService.class);
         ticketService = new TicketServiceImpl(seatReservationService, ticketPaymentService);
     }
-
 
     @Test
     public void testCalculateCorrectPriceAndSeats() {
